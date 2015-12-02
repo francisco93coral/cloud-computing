@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>FTP - Grupo 6</title>
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+
+    <!-- Custom Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" type="text/css">
+
+    <!-- Plugin CSS -->
+    <link rel="stylesheet" href="css/animate.min.css" type="text/css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/creative.css" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body id="page-top">
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top affix-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">Grupo 6</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a class="page-scroll" href="index.html#about">Introducci&oacute;n</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="index.html#services">Servicios</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="index.html#portfolio">Acerca de Nosotros</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="index.html#contact">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+	<section class="bg-primary" >
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+				 <image class="fa fa-4x wow bounceIn text-primary" src="img/servicios/DHCP.jpg" style="height: 160px;"></image>
+				 <strong><span class="bounceInDown">SERVIDOR DHCP</span></strong><span class="bounceInDown"></span>
+<p><strong><em>&nbsp;</em></strong></p>
+                 <p>DHCP, es un protocolo (Dynamic Host Configuration  Protocol) tiene como función  proporcionar configuraciones de forma centralizada desde un servidor de la red,  evitando así el tener que hacerlo de  forma descentralizada desde cada estación de  trabajo.</p>
+                 <p>Un cliente que haya  sido configurado con DHCP no posee  direcciones estáticas sino que se  configura totalmente de manera automática según  las especificaciones del servidor DHCP.</p>
+                 <p>En este último caso, el servidor DHCP procurará asignar a  un cliente siempre la misma dirección para cada consulta (aunque estén  espaciadas en el tiempo) – claro que esto no funcionará si en la red hay más ordenadores que direcciones.<br>
+                   Por lo  tanto, el administrador del sistema  puede beneficiarse de DHCP de dos formas.</p>
+                 <p>Por una parte  es posible realizar de forma centralizada, cómoda y automática grandes  Modificaciones (de configuración y/o de direcciones de red) en el archivo de  configuración del servidor DHCP y todo ello sin tener que configurar los clientes uno a uno.</p>
+                 <p>Por otra parte y sobre todo, es posible  integrar fácilmente nuevos ordenadores a la red Asignándoles un número IP del conjunto de direcciones.</p>
+                 <br clear="all">
+<h2 class="section-heading">&nbsp;</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+	 <section >
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Manual de Creaci&oacute;n del Servidor DHCP</h2>
+                    <hr class="primary">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row" style="font-size: 16px;border: #f05f40;border-radius: 5px;border-color: #f05f40;border-style: none solid solid;line-height: 1.5;">
+			 <div class="col-lg-12 col-md-offset-2 col-md-6  ">
+			   <h1><a name="_TOC_250006"><u>Configuración   del  servidor DHCP</u></a></h1>
+               <p><strong>&nbsp;</strong></p>
+               <ol>
+				<li>Para configurar el servicio dhcp es necesario  obtener   direcciones IP con su mascara de red correspondiente para ello nos otorgaron la siguiente dirección  de red <strong>193.168.0.0/24</strong>, de la cual se  nos pide un subneting para 12 sub redes  y su nueva mascara de sub red. </li>
+				</ol>
+				<blockquote>
+				  <p>&nbsp;</p>
+				  <table border="0" cellspacing="0" cellpadding="0">
+				    <tr>
+				      <td width="82" valign="top"><p align="center"><strong>cantidad</strong></p></td>
+				      <td width="128" valign="top"><p><strong>Sub red</strong></p></td>
+				      <td width="124" valign="top"><p><strong>Inicio red</strong></p></td>
+				      <td width="124" valign="top"><p><strong>Fin red</strong></p></td>
+				      <td width="124" valign="top"><p><strong>broadcast</strong></p></td>
+			        </tr>
+				    <tr>
+				      <td width="82" valign="top"><p align="center">1 </p></td>
+				      <td width="128" valign="top"><p>192.168.0.0 </p></td>
+				      <td width="124" valign="top"><p>192.168.0.1 </p></td>
+				      <td width="124" valign="top"><p>192.168.0.14 </p></td>
+				      <td width="124" valign="top"><p>192.168.0.15 </p></td>
+			        </tr>
+				    <tr>
+				      <td width="82" valign="top"><p align="center">2 </p></td>
+				      <td width="128" valign="top"><p>192.168.0.16 </p></td>
+				      <td width="124" valign="top"><p>192.168.0.17 </p></td>
+				      <td width="124" valign="top"><p>192.168.0.30 </p></td>
+				      <td width="124" valign="top"><p>192.168.0.31 </p></td>
+			        </tr>
+				    <tr>
+				      <td width="82" valign="top"><p align="center">3 </p></td>
+				      <td width="128" valign="top"><p>192.168.0.32 </p></td>
+				      <td width="124" valign="top"><p>192.168.0.33 </p></td>
+				      <td width="124" valign="top"><p>192.168.0.46 </p></td>
+				      <td width="124" valign="top"><p>192.168.0.47 </p></td>
+			        </tr>
+				    <tr>
+				      <td width="82" valign="top"><p align="center">4 </p></td>
+				      <td width="128" valign="top"><p>192.168.0.48 </p></td>
+				      <td width="124" valign="top"><p>192.168.0.49 </p></td>
+				      <td width="124" valign="top"><p>192.168.0.62 </p></td>
+				      <td width="124" valign="top"><p>192.168.0.63 </p></td>
+			        </tr>
+				    <tr>
+				      <td width="82" valign="top"><p align="center">5 </p></td>
+				      <td width="128" valign="top"><p>192.168.0.64 </p></td>
+				      <td width="124" valign="top"><p>192.168.0.65 </p></td>
+				      <td width="124" valign="top"><p>192.168.0.78 </p></td>
+				      <td width="124" valign="top"><p>192.168.0.79 </p></td>
+			        </tr>
+				    <tr>
+				      <td width="82" valign="top"><p align="center">6 </p></td>
+				      <td width="128" valign="top"><p>192.168.0.80 </p></td>
+				      <td width="124" valign="top"><p>192.168.0.81 </p></td>
+				      <td width="124" valign="top"><p>192.168.0.94 </p></td>
+				      <td width="124" valign="top"><p>192.168.0.95 </p></td>
+			        </tr>
+				    <tr>
+				      <td width="82" valign="top"><p align="center">7 </p></td>
+				      <td width="128" valign="top"><p>192.168.0.96 </p></td>
+				      <td width="124" valign="top"><p>192.168.0.97 </p></td>
+				      <td width="124" valign="top"><p>192.168.0.110 </p></td>
+				      <td width="124" valign="top"><p>192.168.0.111 </p></td>
+			        </tr>
+				    <tr>
+				      <td width="82" valign="top"><p align="center"><strong>8</strong></p></td>
+				      <td width="128" valign="top"><p><strong>192.168.0.112</strong></p></td>
+				      <td width="124" valign="top"><p><strong>192.168.0.113</strong></p></td>
+				      <td width="124" valign="top"><p><strong>192.168.0.126</strong></p></td>
+				      <td width="124" valign="top"><p><strong>192.168.0.127</strong></p></td>
+			        </tr>
+				    <tr>
+				      <td width="82" valign="top"><p align="center">9 </p></td>
+				      <td width="128" valign="top"><p>192.168.0.128 </p></td>
+				      <td width="124" valign="top"><p>192.168.0.129 </p></td>
+				      <td width="124" valign="top"><p>192.168.0.142 </p></td>
+				      <td width="124" valign="top"><p>192.168.0.143 </p></td>
+			        </tr>
+			      </table>
+			      <p>&nbsp;</p>
+			   </blockquote>
+				<p>	         De forma grafica nos ubicamos en el menú <strong>systems  &gt;&gt; administration &gt;&gt; Network </strong>lo cual nos mostrara las tarjetas  de red que tenemos disponibles para asignar dirección IP a nuestro servidor  figura dhcp1. </p>
+<p><img src="dhcp_clip_image002.png" alt="" width="379" height="228"></p>
+               <p>Clic en la herramienta Edit esta nos permitirá  editar los parámetros de nuestra tarjeta de red que en nuestro caso es la eth1 como se muestra en la figura dhcp2. </p>
+                <p>1.4.1 clic en la opción <strong>Statically set IP addresses </strong>colocamos  respetivamente los valores a las líneas address y subnet mask como se lo  mostramos en la figura dhcp2.<br>
+                  <img src="dhcp_clip_image004.png" alt="" width="414" height="314"><br clear="ALL">
+               </p>
+                <br clear="all">
+                <p>Solo nos queda  activar nuestra tarjeta como se muestra en la figura dhcp3 y listo  podemos proseguir con la configuración del servidor dhcp. </p>
+               <p><img src="dhcp_clip_image002_0000.png" alt="" width="425" height="60"><br clear="ALL">
+                </p>
+               <p>Para iniciar la instalación siempre se recuerda  la inserción del DVD de nuestro sistema server en la unidad de lectura  correspondiente, para instalar primero ejecutamos el nuestra terminal o Shell  el siguiente comando como se nos muestra  en la figura dhcp4. </p>
+                <p><img src="dhcp_clip_image003.png" alt="" width="494" height="46"><br clear="ALL">
+               </p>
+               <p><img src="dhcp_clip_image005.png" alt="" width="561" height="418"><br clear="ALL">
+                </p>
+               <p><img src="dhcp_clip_image002_0001.png" alt="" width="551" height="114"><br clear="ALL">
+                 El comando  anterior solo nos configura por así decir o  llamar la parte existencial en los  directorios de configuración del servicio  nota sub rayar que este servicio no posee un archivo de  configuración como los anteriores pero si posee un ejemplo de configuración el  cual tomaremos para configurar nuestro servicio como se nos muestra en la  figura dhcp5. </p>
+               <p>Una  ves copiado el archivo procedemos a borrar el archivo de ejemplo como se nos muestra en la figura dhcp6. </p>
+                <p><img src="dhcp_clip_image004_0000.png" alt="" width="529" height="80"><br clear="ALL">
+               </p>
+               <p>Como siguiente paso creamos una copia de respaldo del archivo <strong>dhcpd.conf </strong>con el nombre <strong>dhcpd.conf.org</strong>,  luego de procedemos ah editar el archivo de configuración de nuestro dhcp como  se muestra en la figura dhcp7. </p>
+               <p><img src="dhcp_clip_image006.png" alt="" width="514" height="78"></p>
+               <p>Una vez abierto nuestro archivo de configuración  editaremos los parámetros como se muestran en las figuras dhcp8,9 y 10 respectivamente. </p>
+                <p><img src="dhcp_clip_image004_0001.png" alt="" width="609" height="294"><br clear="ALL">
+               </p>
+               <p>&nbsp;</p>
+               <p>Una  ves editado nuestro archivo de configuracion guardamos los cambios y procedemos a algo muy importante que es  editar el archivo donde le indicaremos al servicio escuche las peticiones del cliente el cual lo encontramos <strong>/etc/sysconfig/dhcpd </strong>y procedemos ah  editar el archivo como se nos muestran en las  figuras dhcp11 y 12. </p>
+                <p><img src="dhcp_clip_image006_0000.png" alt="" width="456" height="57"><br clear="ALL">
+               </p>
+<p><br clear="ALL">
+          </p>
+<p><img src="dhcp_clip_image002_0002.png" alt="" width="565" height="171"></p>
+<p>&nbsp;</p>
+<p>Una  vez configurado guardmos el archivo y procedemos a abrir los puestos 67 y 68 en  udp desde <strong>system&gt;&gt;administration&gt;&gt;securitylevelandfirewall  </strong>como   se nos muestra en la figura dhcp13. </p>
+<p><img src="dhcp_clip_image004_0002.png" alt="" width="330" height="352"><br clear="ALL">
+</p>
+<p>Guardar  cambios y procederemos ah reiniciar el servicio de nuestras network, luego  iniciamos los servicios dhcpd y los encendemos como se nos muestra en  la figura dhcp14. </p>
+<p><img src="dhcp_clip_image005_0000.png" alt="" width="496" height="101"><br clear="ALL">
+</p>
+<br clear="all">
+<div>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p><img src="dhcp_clip_image008.png" alt="" width="490" height="92"></p>
+  <p>&nbsp;</p>
+  <p>
+    <div>
+  </p>
+<p>dhcp15.</p>
+</div>
+&nbsp;Una vez iniciado nuestro  servicio nos diregimos ah nuestro computador cliente e iniciamos el <strong>cmd </strong>donde escribiremos el comando <strong>ipconfig </strong>para verificar que nuestro servicio dhcp esta funcionando  de forma correcta como se nos muestra en la figura <br>
+<img src="dhcp_clip_image010.png" alt="" width="581" height="283"><br clear="ALL">
+<p>Listo  una vez confirmada que nuestro servidor esta funcionando de  forma correcta se podria decir que hemos  terminado la configuracion. </p>
+<br clear="all">
+<br clear="all">
+<ol>
+    <ol>
+                  </ol>
+                </ol>
+              </div></div>
+        </div>
+    </section>
+  
+	  
+	
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/jquery.fittext.js"></script>
+    <script src="js/wow.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/creative.js"></script>
+
+</body>
+
+</html>

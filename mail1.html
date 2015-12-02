@@ -1,0 +1,168 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>MAIL - Grupo 6</title>
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+
+    <!-- Custom Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" type="text/css">
+
+    <!-- Plugin CSS -->
+    <link rel="stylesheet" href="css/animate.min.css" type="text/css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/creative.css" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body id="page-top">
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top affix-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">Grupo 6</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a class="page-scroll" href="index.html#about">Introducci&oacute;n</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="index.html#services">Servicios</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="index.html#portfolio">Acerca de Nosotros</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="index.html#contact">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+	<section class="bg-primary" >
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                 <p align="center"><strong><u>INSTALACION  DE ZIMBRA</u></strong></p>
+                 <p>Zimbra es&nbsp;<strong>suite de colaboración Zimbra</strong>&nbsp;(en  inglés: &lsquo;<strong>Zimbra Collaboration Suite&rsquo;</strong>&nbsp;o&nbsp;<strong>ZCS</strong>) es un programa informático colaborativo o Groupware  creado por Zimbra Inc. </p>
+<h2 class="section-heading">&nbsp;</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+	 <section >
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Manual de Creaci&oacute;n del ZIMBRA</h2>
+                    <hr class="primary">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row" style="font-size: 16px;border: #f05f40;border-radius: 5px;border-color: #f05f40;border-style: none solid solid;line-height: 1.5;">
+			 <div class="col-lg-12 col-md-offset-2 col-md-6  ">
+				<ol> 
+				<li>
+				  <p><strong>Antes de instalar</strong></p>
+                  <ul>
+                    <li>Se descarga el paquete de zimbra desde el sitio  oficial,&nbsp;<a href="http://www.zimbra.com/downloads/os-downloads.html" title="zimbra"><strong>acá</strong></a>&nbsp;(edición open source), en este manual de  instalación se descargo para el sistema&nbsp;<strong>Red Hat Enterprise Linux 5</strong>&nbsp;de  64 bits puesto que la de 32 bits esta obsoleta.</li>
+                  </ul>
+                  <p>Para  empezar, se instalan en el sistema GNU/Linux CentOS 5 los siguientes paquetes;</p>
+                  <ul>
+                    <li>gcc</li>
+                    <li>&nbsp;libtool-ltdl</li>
+                    <li>compat-db</li>
+                    <li>sysstat</li>
+                    <li>gmp-devel.x86_64</li>
+                  </ul>
+                  <p><strong>&nbsp;yum install gcc</strong> <br>
+                    <strong>yum install libtool-ltdl</strong> <br>
+                    <strong>yum install compat-db</strong> <br>
+                    <strong>yum install sysstat</strong> <br>
+                    <strong>yum install gmp-devel.x86_64</strong> <br>
+                    Se  desactiva el servicio de sendmail;<br>
+  <strong>chkconfig sendmail off</strong> <br>
+                    Se  detiene el servicio de sendmail;<br>
+  <strong>service sendmail stop</strong> <br>
+                    Se procede con la descomprensión del paquete&nbsp;<strong>zimbra</strong>;<br>
+  <strong>tar -zxvf  zcs-7.1.4_GA_2555.RHEL5_64.20120105094627.tgz</strong> <br>
+                    Si  se desea se renombra el direcotorio recien descompreso;<br>
+  <strong>mv</strong>&nbsp;<strong>zcs-7.1.4_GA_2555.RHEL5_64.20120105094627</strong>&nbsp;<strong>zcs-7.1.4</strong><br>
+                    Se  ingresa al directorio;<br>
+  <strong>cd</strong>&nbsp;<strong>zcs-7.1.4</strong><br>
+                    Se  procede con la instalación;<br>
+  <a href="http://www.enlinux.org/wp-content/uploads/2012/03/zimbra_1.png"><img border="0" width="576" height="302" src="mail_clip_image001.png" alt="http://www.enlinux.org/wp-content/uploads/2012/03/zimbra_1.png"></a>Donde;<br>
+  <strong>– – platform-override:</strong>&nbsp;Permite que no verifique versión.<br>
+                    Se acpetan los términos de licencia y se seleccionan (<strong>Y</strong>) todos los paquetes. Se realiza una comprobación del  sistema operativo, contestando (<strong>Y</strong>);<br>
+  <a href="http://www.enlinux.org/wp-content/uploads/2012/03/zimbra_2.png"><img border="0" width="533" height="242" src="mail_clip_image002.png" alt="http://www.enlinux.org/wp-content/uploads/2012/03/zimbra_2.png"></a> <br>
+                    Si se está instalando como prueba (mi caso) y no se  cuenta con un servicio&nbsp;<strong>DNS</strong>, se  escribe&nbsp;<strong>No</strong>&nbsp;cuando se pregunta sobre el servicio de  Dominio;<br>
+  <a href="http://www.enlinux.org/wp-content/uploads/2012/03/zimbra_3.png"><img border="0" width="611" height="484" src="mail_clip_image004.jpg" alt="http://www.enlinux.org/wp-content/uploads/2012/03/zimbra_3.png"></a></p>
+                  <p>Se asgina la contraseña del&nbsp;<strong>Admin</strong>&nbsp;del sistema (opción&nbsp;<strong>3</strong>) y se escribe la letra &ldquo;<strong>a</strong>&rdquo; para completar la  instalación;<br>
+                    <a href="http://www.enlinux.org/wp-content/uploads/2012/03/zimbra_4.png"><img border="0" width="478" height="352" src="mail_clip_image005.png" alt="http://www.enlinux.org/wp-content/uploads/2012/03/zimbra_4.png"></a><a href="http://www.enlinux.org/wp-content/uploads/2012/03/zimbra_5.png"><img border="0" width="483" height="140" src="mail_clip_image006.png" alt="http://www.enlinux.org/wp-content/uploads/2012/03/zimbra_5.png"></a> <br>
+                    Se cambia al usuario&nbsp;<strong>zimbra</strong>&nbsp;y se  ejecuta la sintaxis&nbsp;<strong>zmcontrol status</strong>&nbsp;para  verificar que los servicios se instalaron correctamente;<br>
+  <img border="0" width="322" height="287" src="mail_clip_image007.png" alt="http://www.enlinux.org/wp-content/uploads/2012/03/zimbra_7.png"> <br>
+                    Se edita el archivo&nbsp;<strong>syslog</strong>&nbsp;con el  objetivo de controlar las entradas remotas, agregando el parámetro&nbsp;<strong>-r</strong>en la opción&nbsp;<strong>SYSLOGD_OPTIONS</strong>;<br>
+  <strong>vim /etc/sysconfig/syslog</strong> <br>
+  <a href="http://www.enlinux.org/wp-content/uploads/2012/03/zimbra_8.png"><img border="0" width="592" height="275" src="mail_clip_image008.png" alt="http://www.enlinux.org/wp-content/uploads/2012/03/zimbra_8.png"></a>Listo, ya se cuenta con la suite colaborativa de  zimbra. Para ingresar se abre el navegador y se escribe;<br>
+  <strong>https://localhost.localdomain:7071/zimbraAdmin</strong> <br>
+  <a href="http://www.enlinux.org/wp-content/uploads/2012/03/zimbra_9.png"><img border="0" width="496" height="301" src="mail_clip_image009.png" alt="http://www.enlinux.org/wp-content/uploads/2012/03/zimbra_9.png"></a> <br>
+                    Hechando un vistazo al panel de administración y  creando una cuenta de correo;<br>
+  <a href="http://www.enlinux.org/servidor-de-correo-con-zimbra-en-gnulinux-centos-5-de-64-bits/wp-content/uploads/2012/03/zimbra_correo_11.png"><img border="0" width="539" height="273" src="mail_clip_image011.jpg" alt="http://www.enlinux.org/wp-content/uploads/2012/03/zimbra_correo_11.png"></a> <br>
+                    Si se desea comprobar la cuenta recien creada, se  escribe en el navegador Web;<br>
+  <strong>http://localhost.localdomain/zimbra</strong></p>
+                  <p><a href="http://www.enlinux.org/wp-content/uploads/2012/03/zimbra_correo_cliente_13.png"><img border="0" width="502" height="346" src="mail_clip_image012.png" alt="http://www.enlinux.org/wp-content/uploads/2012/03/zimbra_correo_cliente_13.png"></a> <br>
+                    Vistazo de la cuenta recien creada;</p>
+				</li>
+	
+
+				</ol> 
+          </div></div>
+        </div>
+    </section>
+  
+	  
+	
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/jquery.fittext.js"></script>
+    <script src="js/wow.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/creative.js"></script>
+
+</body>
+
+</html>

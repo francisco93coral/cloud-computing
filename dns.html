@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>FTP - Grupo 6</title>
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+
+    <!-- Custom Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" type="text/css">
+
+    <!-- Plugin CSS -->
+    <link rel="stylesheet" href="css/animate.min.css" type="text/css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/creative.css" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body id="page-top">
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top affix-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">Grupo 6</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a class="page-scroll" href="index.html#about">Introducci&oacute;n</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="index.html#services">Servicios</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="index.html#portfolio">Acerca de Nosotros</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="index.html#contact">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+	<section class="bg-primary" >
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+				 <image class="fa fa-4x wow bounceIn text-primary" src="dns_clip_image002.png" style="height: 160px;"></image>
+                 <h2 class="section-heading"><strong><u>DNS</u><br>
+                 <span class="small">Un Servidor DNS  (Domain Name System) se utiliza para proveer a las computadoras de los usuarios  (cliente) un nombre equivalente a las direcciones IP. El uso de este servidor  es transparente para los usuarios cuando éste está bien configurado. <br>
+                 Cada LAN (Local  Área Network) debería contar con un servidor DNS. Estos servidores trabajan  para intercambiar información y obtener las direcciones IP de otras LANs.</span></strong></h2>
+<p align="center"><img src="dns_clip_image002.png" alt="" width="387" height="197"></p>
+                    <p align="center"><strong><u>BIND</u></strong><br>
+                      <strong>BIND</strong> (Acronimo de Berkely Internet Name  Domain) es una implementación del protocolo DNS y provee una implementación  libre de los principales componentes del sistema de nombres de dominio, las  cuales incluyen:</p>
+                    <ul>
+                      <li>Un servidor de sistema de nombres de dominio  (named).</li>
+                      <li>Una Biblioteca resolutoria de sistema de nombres  de dominio.</li>
+                      <li>Herramientas para verificar la operación  adecuada del servidor DNS (<strong>bind-utils</strong>).</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+	 <section >
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Manual de Creaci&oacute;n del DNS</h2>
+                    <hr class="primary">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row" style="font-size: 16px;border: #f05f40;border-radius: 5px;border-color: #f05f40;border-style: none solid solid;line-height: 1.5;">
+			 <div class="col-lg-12 col-md-offset-2 col-md-6  ">
+				<ol> 
+				<li>
+				  <p align="center"><strong><u>Instalación de Paquetes</u></strong><br>
+				    Para esta  instalación de un servidor DNS, se requieren de los siguientes paquetes:</p>
+                  <ul>
+                    <li><strong>Bind</strong></li>
+                    <li><strong>Caching-nameserver</strong></li>
+                    <li><strong>System-config-bind</strong></li>
+                  </ul>
+                  <p>Los mismos se  instalan de la siguiente manera:<br>
+                    Primero abrimos  nuestra terminal y nos logeamos con supe usuario o <strong><em>root</em></strong>:<br>
+  <img src="dns_clip_image001.png" alt="" width="532" height="94"><br>
+                    Luego  verificamos si los paquetes mencionados arriba, se encuentran ya instalados.  Esto lo hacemos con el comando <strong>rpm</strong> como lo muestra el siguiente Print Screen:<br>
+  <img src="dns_clip_image002_0000.png" alt="" width="534" height="165"><br>
+                    Como podemos  ver, el paquete <strong>bind</strong> se encuentra  instalado pero los dos restantes no. Para proceder a instalarlos utilizamos la  sintaxis de comando <strong>yum –y install  caching-nameserver:</strong><br>
+  <img src="dns_clip_image003.png" alt="" width="534" height="62"><strong></strong></p>
+                  <p>&nbsp;</p>
+                  <p align="center"><strong><img src="dns_clip_image004.png" alt="" width="536" height="128"></strong><br>
+                    Y luego  ingresaremos <strong>yum –y install  system-config-bind</strong>:<br>
+  <img src="dns_clip_image005.png" alt="" width="534" height="67"><br>
+  <img src="dns_clip_image006.png" alt="" width="535" height="77"><br>
+                    Una vez instalados  los paquetes que necesitamos procederemos a agregar el nombre del dominio. Esto  lo hacemos editando el archivo <strong>/etc/hosts</strong>,  escribiendo la sintaxis [editor de texto preferido] <strong>/etc/hosts</strong>.<br>
+  <img src="dns_clip_image007.png" alt="" width="533" height="60"><br>
+                    Y nos abrirá el  siguiente archivo que es donde agregaremos el nombre de nuestro servidor:<br>
+  <img src="dns_clip_image008.png" alt="" width="532" height="124"><br>
+                    Debajo de la  ultima línea, escribimos nuestra IP seguida del nombre de nuestra máquina (en  mi caso <strong>martin.server</strong>) y luego el  nombre de usuario.<br>
+                    Ejemplo:<br>
+  <img src="dns_clip_image009.png" alt="" width="536" height="141"><br>
+                    Luego guardamos  utilizando CRTL + O y salimos utilizando CRTL + X:<br>
+  <img src="dns_clip_image010.png" alt="" width="532" height="45"><br>
+  <img src="dns_clip_image011.png" alt="" width="533" height="72"><br>
+                    A continuación  realizamos una copia del archivo que viene por defecto en la instalación en  otro directorio en donde encontraremos la configuracion del servidor.<br>
+                    Para hacer esto,  ingresamos la siguiente línea:<br>
+  <strong>cp /usr/share/doc/bind-9.3.6/sample/etc/named.conf /etc/named.conf</strong><br>
+  <img src="dns_clip_image012.png" alt="" width="572" height="84"> <br>
+                    Hecho esto,  editamos el archivo <strong>/etc/named.conf</strong>:<br>
+  <img src="dns_clip_image013.png" alt="" width="572" height="69"><br>
+                    No abrirá el  siguiente archivo:<br>
+  <img src="dns_clip_image015.jpg" alt="" width="570" height="191"><br>
+                    Al final de  este, nos localizaremos en la siguiente línea:<br>
+  <img src="dns_clip_image016.png" alt="" width="574" height="372"> <br>
+                    Y escribiremos lo siguiente:<br>
+  <img src="dns_clip_image017.png" alt="" width="568" height="77"> <br>
+                    Luego nos situamos en el directorio <strong>var/named/chroot/var/named</strong>:<br>
+  <img src="dns_clip_image018.png" alt="" width="572" height="68"> <br>
+                    Ingresamos un <strong>ls </strong>para ver los archivos que se encuentran en este directorio:<br>
+  <img src="dns_clip_image019.png" alt="" width="573" height="104"> <br>
+                    Hecho esto, procederemos a hacer copia al  archivo señalado <strong>localhost.zone</strong>. En  mi caso lo copiaré a uno con el nombre <strong>martin.server.zone</strong>.<br>
+                    Luego edito el archivo creado  con mi editor de texto (en mi caso<strong> nano</strong>):<br>
+  <img src="dns_clip_image020.png" alt="" width="572" height="97"> <br>
+  <img src="dns_clip_image021.png" alt="" width="572" height="372"> <br>
+                    En este archivo procederemos a modificar  ciertos puntos. Por ejemplo, en la primera línea:<br>
+  <img src="dns_clip_image022.png" alt="" width="574" height="99"> <br>
+                    Modificamos los arrobas (@) por el nombre  del dominio (en mi caso <strong>martin.server</strong>)  y a la parte que dice <strong>root</strong> le  agregamos un &ldquo;@ + el nombre&rdquo;. Ejemplo:<br>
+  <img src="dns_clip_image023.png" alt="" width="576" height="98"> <br>
+                    Luego en la otra parte a editar hacemos lo  siguiente:<br>
+  <img src="dns_clip_image024.png" alt="" width="461" height="42"> <br>
+                    El archivo quedaría así:<br>
+  <img src="dns_clip_image025.png" alt="" width="571" height="39"> <br>
+                    Hecho esto, guardamos y cerramos. Luego  iniciamos el servicio con la línea <strong>service  named start</strong>:<br>
+  <img src="dns_clip_image026.png" alt="" width="572" height="87"> <br>
+                    Luego que el servicio inicia de manera  correcta, procederemos a asignarle una IP estática a nuestro servidor. Para  esto hacemos lo siguiente:<br>
+  <img src="dns_clip_image028.jpg" alt="" width="582" height="186"> <br>
+                    Nos abrirá la siguiente ventana pidiéndonos  la clave:<br>
+  <img src="dns_clip_image029.png" alt="" width="335" height="174"> <br>
+                    Luego nos presentará la ventana de  configuracion de red:<br>
+  <img src="dns_clip_image030.png" alt="" width="365" height="366"> <br>
+                    Damos doble clic en la tarjeta de red:<br>
+  <img src="dns_clip_image031.png" alt="" width="418" height="429"> <br>
+                    Y en la parte que dice <strong>Statically set IP addresses</strong>, la seleccionamos y ponemos nuestra IP:<br>
+  <img src="dns_clip_image032.png" alt="" width="417" height="126"> <br>
+                    Cuando guardemos y cerremos la ventana, nos  aparecerá la siguiente advertencia, a la daremos a <strong>yes</strong>:<br>
+  <img src="dns_clip_image033.png" alt="" width="259" height="127"> <br>
+                    Luego, abrimos nuestra terminal nuevamente y  reiniciamos el servicio de red. Para esto escribimos la sintaxis <strong>service network restart</strong>:<br>
+  <img src="dns_clip_image034.png" alt="" width="572" height="125"> <br>
+                    Como lo menionamos anteriormente, para probar el  servidor, hacemos ping al dominio:<br>
+  <img src="dns_clip_image035.png" alt="" width="573" height="196"> <br>
+                    Y eso es todo.</p>
+				</li>
+	
+
+				</ol> 
+          </div></div>
+        </div>
+    </section>
+  
+	  
+	
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/jquery.fittext.js"></script>
+    <script src="js/wow.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/creative.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>FTP - Grupo 6</title>
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+
+    <!-- Custom Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" type="text/css">
+
+    <!-- Plugin CSS -->
+    <link rel="stylesheet" href="css/animate.min.css" type="text/css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/creative.css" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body id="page-top">
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top affix-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">Grupo 6</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a class="page-scroll" href="index.html#about">Introducci&oacute;n</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="index.html#services">Servicios</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="index.html#portfolio">Acerca de Nosotros</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="index.html#contact">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+	<section class="bg-primary" >
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+				 <image class="fa fa-4x wow bounceIn text-primary" src="img/servicios/ftp.jpg" style="height: 160px;"></image>
+                 <h2 class="section-heading">Servicio FTP</h2>
+                    <hr class="light">
+                    <p class="text-faded">FTP (siglas en inglés de File Transfer Protocol, ‘Protocolo de Transferencia de Archivos’), 
+					es un protocolo de red para la transferencia de archivos entre sistemas interconectados o enlazados a Internet,
+					basado en la arquitectura cliente-servidor. Desde un equipo cliente se puede conectar a un servidor para descargar
+					archivos desde él o para enviarle archivos, independientemente del sistema operativo utilizado en cada equipo.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+	 <section >
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Manual de Creaci&oacute;n del Servicio FTP Ubuntu</h2>
+                    <hr class="primary">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row" style="font-size: 16px;border: #f05f40;border-radius: 5px;border-color: #f05f40;border-style: none solid solid;line-height: 1.5;">
+			 <div class="col-lg-12 col-md-offset-2 col-md-6  ">
+				<ol> 
+				<li>Ingresa al terminal y digitar: <strong> sudo su </strong>  
+				<p>A continuaci&oacute;n se digita el pasword</p></li>
+				<li>En el terminar se ingresa el comando: <strong>apt-get install vsftpd</strong></li> 
+				<li>A continuaci&oacute;n creamos un grupo de usuarios ftp con el comando: <strong>groupadd ftp</strong></li> 
+				<li>Se crea la carpeta para el uso del ftp con el comando: <strong>mkdir /home/ftp</strong></li> 
+				<li>Se crea la carpeta para el usuario del ftp con el comando: <strong>mkdir /home/ftp/ubuntucliente</strong></li> 
+				<li>Se crea la carpeta para el bin del ftp con el comando: <strong>mkdir /bin/ftp</strong></li> 
+				<li>A continuaci&oacute;n modifica el shell para seguidad del sistema operativo con el comando: <strong>nano /etc/shells</strong></li>
+					<p> Al final del archivo se agrega <strong>/bin/ftp</strong></p>
+				<li>Se crea un usuario para el acceso al servicio ftp con el comando: <br>
+				<strong>useradd -g ftp -d /home/ftp/ubuntucliente -s /bin/ftp ubuntucliente</strong></li>
+				<li>Se agrega el pasword para el cliente del servicio ftp con el comando: <strong>passwd ubuntucliente</strong></li>
+				<li>Ahora hay que darle permiso al usuario pueda ser el dueño de su carpeta con los comandos: 
+					<strong>
+					<p>cd /home/ftp</p>
+					<p>chown ubuntucliente.ftp ubuntucliente/</p>
+					</strong>	</li>
+				<li>Abrimos el archivo de configuración con el comando: <strong>nano /etc/vsftpd.conf</strong><br>
+				
+					<p>Borra el segno de # en las siguientes filas:</p>
+					anonymous_enable=NO<br>
+						local_enable=YES<br>
+						write_enable=YES<br>
+						local_umask=022<br>
+						chroot_local_user=YES<br>
+						chroot_list_enable=YES<br>
+						chroot_list_file=/etc/vsftpd.chroot_list
+					
+				</li>
+				<li> Finalmente agregamos en la lista al usuario el comando: <br>
+				<strong>sudo touch vsftpd.chroot_list <br>
+					echo “usuario”>> vsftpd.chroot_list</strong></li>
+				
+				<li> Finalmente reiniciamos el servicio con  el comando: <strong>service vsftpd restart </strong></li>
+	
+
+				</ol> 
+            </div></div>
+        </div>
+    </section>
+  
+	  
+	
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/jquery.fittext.js"></script>
+    <script src="js/wow.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/creative.js"></script>
+
+</body>
+
+</html>
